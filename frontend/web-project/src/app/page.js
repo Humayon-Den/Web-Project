@@ -40,11 +40,12 @@ export default function Home() {
 
           <div className="flex justify-center items-center mt-14 mx-[50px] gap-4">
             <p className="text-center  text-gray-500 ">35.8k <br /> Shares</p>
-            <Link href={"#"} className='w-32 h-8 bg-blue-500 rounded-full'> <img src="/telegram.png" alt="Loading" className=" h-[80%] w-[20%] mx-[39%] mt-1" /> </Link>
+            <Link href={"https://t.me/share/url?url=https%3A%2F%2Fanicrush.to%2F&text=Anicrush%20-%20Watch%20Anime%20Online%20Free&to="} className='w-32 h-8 bg-blue-500 rounded-full' target='_blank'> <img src="/telegram.png" alt="Loading" className=" h-[80%] w-[20%] mx-[39%] mt-1" /> </Link>
 
-            <Link href={"#"} className='w-12 h-8 bg-white rounded-full'> <img src="/twitter.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2" /> </Link>
-            <Link href={"#"} className='w-12 h-8 bg-[#FF5700] rounded-full'> <img src="/reddit.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2 " /> </Link>
-            <Link href={"#"} className='w-12 h-8 bg-green-500 rounded-full'> <img src="/share.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2" /> </Link>
+            <Link href={"https://twitter.com/intent/tweet?text=Anicrush%20-%20Watch%20Anime%20Online%20Free&url=https%3A%2F%2Fanicrush.to%2F"} className='w-12 h-8 bg-white rounded-full' target='_blank'> <img src="/twitter.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2" /> </Link>
+            <Link href={"https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fsubmit%3Ftitle%3DAnicrush%2B-%2BWatch%2BAnime%2BOnline%2BFree%26url%3Dhttps%253A%252F%252Fanicrush.to%252F"} className='w-12 h-8 bg-[#FF5700] rounded-full' target='_blank'> <img src="/reddit.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2 " /> </Link>
+            <Link href={"https://web.facebook.com/sharer.php?t=Anicrush+-+Watch+Anime+Online+Free&u=https%3A%2F%2Fanicrush.to%2F&_rdc=1&_rdr#"} className='w-12 h-8 bg-blue-600 rounded-full' target='_blank'> <img src="/facebook.svg" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2  fill-white stroke-white" /> </Link>
+            <Link href={""} className='w-12 h-8 bg-green-500 rounded-full' target='_blank'> <img src="/share.png" alt="Loading" className=" h-[] w-[40%] ml-[30%]  mt-2" /> </Link>
 
 
 
