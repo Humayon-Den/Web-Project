@@ -19,9 +19,9 @@ export default function Home() {
         <div className="w-1/2 h-[100%] bg-zinc-900   m-auto ">
 
           <nav className="flex justify-center pb-2 mt-[20px] ml-[30px] mr-[30px] gap-9">
-            <a href="#" className="text-white">Home</a>
+            <a href="/home" className="text-white">Home</a>
             <a href="#" className="text-white">Explore</a>
-            <a href="#" className="text-white">Most Popular</a>
+            <a href="/mostPopular" className="text-white">Most Popular</a>
             <a href="#" className="text-white">Watch2gether</a>
           </nav>
 
@@ -36,7 +36,9 @@ export default function Home() {
           <p className="mt-8 text-gray-500 font-sans text-sm ml-[65px] mr-[69px]">
             <strong className='text-gray-300'>Suggestion:</strong> Dandadan, Overflow (Uncensored), Blue Lock Season 2, Re:ZERO - Starting Life in Another World-, Jujutsu Kaisen 2nd Season, Bleach, Solo Leveling, Bleach: Thousand-Year Blood War - The Conflict, Jujutsu Kaisen (TV), The Eminence in Shadow
           </p>
-          <button className=" w-[50%] py-3 bg-purple-600 rounded-full text-white text-lg ml-[140px] mt-14">Enter Anicrush </button> {/* inset arrow */}
+          {/* <button   className=" w-[50%] py-3 bg-purple-600 rounded-full text-white text-lg ml-[140px] mt-14">Enter Anicrush </button> inset arrow */}
+
+          <Link href={"/home"} className=" w-[50%] py-3 bg-purple-600 rounded-full text-white text-lg ml-[140px] mt-14">Enter Anicrush</Link>
 
           <div className="flex justify-center items-center mt-14 mx-[50px] gap-4">
             <p className="text-center  text-gray-500 ">35.8k <br /> Shares</p>
