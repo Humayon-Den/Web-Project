@@ -3,6 +3,7 @@ import React from 'react';
 // import Sidebar from './components/Sidebar';
 // import Header from './components/Header';
 // import MostPopular from './components/MostPopular';
+import { FaArrowRight } from "react-icons/fa6"; 
 
 
 
@@ -19,28 +20,31 @@ export default function Home() {
         <div className="w-1/2 h-[100%] bg-zinc-900   m-auto ">
 
           <nav className="flex justify-center pb-2 mt-[20px] ml-[30px] mr-[30px] gap-9">
-            <a href="/home" className="text-white">Home</a>
-            <a href="#" className="text-white">Explore</a>
-            <a href="/mostPopular" className="text-white">Most Popular</a>
-            <a href="#" className="text-white">Watch2gether</a>
+            <Link href="/home" className="text-white">Home</Link>
+            <Link href="/home" className="text-white">Explore</Link>
+            <Link href="/mostPopular" className="text-white">Most Popular</Link>
+            <Link href="/home" className="text-white">Watch2gether</Link>
           </nav>
 
-          <div className="text-center  ml-[30px] mr-[30px] mt-10">
-            <img src="/logo.png" alt="downlod" className="mx-auto rounded-3xl mb-4  w-[50%]" />
+          <div className="text-center  ml-[30px] mr-[30px] mt-8">
+            <img src="/logo.png" alt="anicrush" className="mx-auto rounded-3xl mb-4  w-[50%]" />
             {/* <h1 className="text-4xl font-bold ml-[30px] mr-[30px]">anicrush</h1> */}
           </div>
-          <div className="relative  ml-[65px] mt-12">
+          <div className="relative  ml-[65px] mt-10">
             <input type="text" placeholder="Search anime" className="w-[83%] p-3 rounded-full bg-gray-800 text-white" />
             <i className="fas fa-search absolute top-3 right-4 text-gray-500"></i>
           </div>
           <p className="mt-8 text-gray-500 font-sans text-sm ml-[65px] mr-[69px]">
             <strong className='text-gray-300'>Suggestion:</strong> Dandadan, Overflow (Uncensored), Blue Lock Season 2, Re:ZERO - Starting Life in Another World-, Jujutsu Kaisen 2nd Season, Bleach, Solo Leveling, Bleach: Thousand-Year Blood War - The Conflict, Jujutsu Kaisen (TV), The Eminence in Shadow
           </p>
+          <div className='ml-[30%] h-auto w-[250px] mt-6 '>
           {/* <button   className=" w-[50%] py-3 bg-purple-600 rounded-full text-white text-lg ml-[140px] mt-14">Enter Anicrush </button> inset arrow */}
 
-          <Link href={"/home"} className=" w-[50%] py-3 bg-purple-600 rounded-full text-white text-lg ml-[140px] mt-14">Enter Anicrush</Link>
+          <Link href={"/home"} className=" flex px-8 py-3 gap-2 justify-center bg-purple-600 rounded-full text-white text-lg items-center ">Enter Anicrush <FaArrowRight /></Link>
+          
+          </div>
 
-          <div className="flex justify-center items-center mt-14 mx-[50px] gap-4">
+          <div className="flex justify-center items-center mt-5 mx-[50px] gap-4">
             <p className="text-center  text-gray-500 ">35.8k <br /> Shares</p>
             <Link href={"https://t.me/share/url?url=https%3A%2F%2Fanicrush.to%2F&text=Anicrush%20-%20Watch%20Anime%20Online%20Free&to="} className='w-32 h-8 bg-blue-500 rounded-full' target='_blank'> <img src="/telegram.png" alt="Loading" className=" h-[80%] w-[20%] mx-[39%] mt-1" /> </Link>
 
@@ -63,7 +67,7 @@ export default function Home() {
 
         {/* right div */}
 
-        <div className="w-1/2 h-[100%] p-10  overflow-auto scrollbar-none bg-zinc-800  text-sm ">
+        <div className="w-1/2 h-[100%] p-10  overflow-auto scrollbar-none bg-zinc-800  text-sm  text-white">
 
 
           <p className="mb-6 ml-[10px] mr-[10px] text-gray-400">Like Death Note, do you have an Anime Note filled with all the titles you'd love to see, but the only missing piece is a free anime site that is free and safe?</p>

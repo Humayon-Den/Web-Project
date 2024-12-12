@@ -11,48 +11,47 @@ import { FiVolume2 } from "react-icons/fi";
 function Sidebar() {
     return (
 
-        <div className='w-[18.5%] bg-[#1e2027] max-h-min fixed border border-gray-800 mt-[78px]'>
+        <div className='w-[100%] bg-[#1e2027] min-h-max  overflow-auto border border-gray-800 '>
 
             <div className='w-full h-full mt-7 flex flex-col  text-white gap-5 '>
 
-                <Link href={"/home"} className='py-2  border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2   flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <FiHome />
                     Home
                 </Link>
-                <Link href={"/home"} className='py-2  border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2   flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <AiOutlineThunderbolt />
                     Newsfeed
                 </Link>
-                <Link href={"/home"} className='py-2  border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2   flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <LuCalendar />
                     Az List
                 </Link>
-                <Link href={"/home"} className='py-2 mb-5 border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/mostPopular"} className='py-2 mb-5  flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <TbTargetArrow />
                     Most Popular
                 </Link>
 
                 <hr />
 
-                <Link href={"/home"} className='py-2 mt-5 border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2 mt-5  flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <PiSpotifyLogoLight />
                     Watch2gether
                 </Link>
-                <Link href={"/home"} className='py-2  border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2   flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <LuCalendarCheck2 />
                     Estimated Schedule
                 </Link>
-                <Link href={"/home"} className='py-2  border border-white flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
+                <Link href={"/home"} className='py-2   flex space-x-4 items-center ml-5 pl-5 gap-2 mr-5 rounded-lg'>
                     <TfiComment />
                     Community
                 </Link>
 
 
-                <div className='w-[80%] h-[15vh] border border-white mt-5 ml-6 rounded-lg'>
-
-                    <span className='flex items-center gap-5 mt-3 ml-3 font-bold mb-5'> <FiVolume2 /> Dubbed <button className='ml-8 border border-white px-2 rounded-lg'>ON</button> </span>
-                    <hr />
-                    <span className='flex items-center gap-5 mt-3 ml-3 font-bold'> <FiVolume2 /> EN Name <button className=' ml-5 border border-white px-2 rounded-lg'>ON</button> </span>
+                <div className='w-[82%] h-[18vh] border border-gray-600 mt-5 ml-6 rounded-lg'>
+                    <span className='flex items-center gap-4 mt-3 ml-3 font-bold mb-5 '> <FiVolume2 /> Dubbed <button className='ml-8 border border-gray-600 px-2 rounded-lg text-sm'>OFF</button> </span>
+                    <hr  className=' border border-gray-600'/>
+                    <span className='flex items-center gap-4 mt-3 ml-3 font-bold '> <FiVolume2 /> EN Name <button className=' ml-5 border border-gray-600 px-2 rounded-lg text-sm'>ON</button> </span>
 
 
 
